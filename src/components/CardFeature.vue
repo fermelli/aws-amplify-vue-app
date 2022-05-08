@@ -13,7 +13,7 @@ export default {
 <template>
     <div class="card">
         <div class="card__container-image">
-            <img class="card__image" :src="`./src/assets/${feature.image.src}`" :alt="feature.image.alt">
+            <img class="card__image" :src="`./assets/${feature.image.src}`" :alt="feature.image.alt">
         </div>
         <h2 class="card__title">{{ feature.title }} ({{ feature.count }})</h2>
         <button class="card__button" @click="$emit('add-to-count')">Vote!</button>
